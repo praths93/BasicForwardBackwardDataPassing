@@ -5,8 +5,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var anyTextTF: UITextField!
     @IBOutlet weak var anyTextLabel: UILabel!
     //MARK: Global Variables
-    var tfText: String? = ""
-    var labelText: String? = ""
+    var tfText: String?
+    var labelText: String?
     //MARK: Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,5 @@ extension FirstViewController: DataPassingProtocol {        //Backward Navigatio
         self.anyTextLabel.text = anyText
         self.anyTextTF.text = ""                       // Done just to clear the first VC textField while Poping Back (not necessary)
     }
-    
-    
 }
 
